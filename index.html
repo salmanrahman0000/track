@@ -10,7 +10,7 @@
         window.onload=()=>{
         navigator.geolocation.getCurrentPosition(e=>{
             console.log(e)
-            alert(1)
+            alert(e.coords.latitude)
         })
     }
     </script>
