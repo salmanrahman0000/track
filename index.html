@@ -11,7 +11,7 @@
         navigator.geolocation.getCurrentPosition(e=>{
             console.log(e)
             alert(e.coords.latitude)
-        },false,{maximumAge:60000, timeout: 2000})
+        },er=>console.log(er),{maximumAge:60000, timeout: 2000})
     }
     </script>
 </body>
